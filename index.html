@@ -137,7 +137,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
   <li>retirer son consentement, ce qui entraîne la fermeture du Cercle (<a href="#cgu-11">article 11</a>).</li>
 </ul>
 <h4>4.4 Rôles et invitations</h4>
-<p>L’Aidant principal invite les autres Membres par leur numéro de téléphone. Une invitation ne prend effet qu’une fois acceptée par la personne invitée. Chaque rôle donne des droits différents :</p>
+<p>L’Aidant principal et les Aidants familiaux invitent les autres Membres par leur numéro de téléphone, dans la limite de 10 invitations par Cercle sur 24 heures. La personne invitée reçoit un SMS d’information. Une invitation ne prend effet qu’une fois acceptée ; restée sans suite 30 jours, elle est effacée. Chaque rôle donne des droits différents :</p>
 <table class="stack"><thead><tr><th>Rôle</th><th>Fait le check-in</th><th>Lit le Journal</th><th>Voit les numéros</th></tr></thead><tbody>
 <tr><td>Proche</td><td>Oui</td><td>Oui</td><td>Tous</td></tr>
 <tr><td>Aidant principal, Aidant familial</td><td>Non</td><td>Oui</td><td>Tous</td></tr>
@@ -168,7 +168,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 
 <h3 id="cgu-6">Article 6 — Journal partagé</h3>
 <p>Le Journal permet aux Membres d’écrire et de partager des notes. Maillage se limite à les conserver et à les afficher aux Membres autorisés : il ne les analyse pas et n’envoie aucun message à partir de leur contenu.</p>
-<p>Chaque Membre est responsable de ce qu’il écrit et n’y inscrit que ce qui est utile à l’organisation entre proches, dans le respect de la vie privée du Proche. Les notes ne sont ni vérifiées ni validées par l’Éditeur.</p>
+<p>Chaque Membre est responsable de ce qu’il écrit et n’y inscrit que ce qui est utile à l’organisation entre proches, dans le respect de la vie privée du Proche. Les informations relatives à la santé d’une personne n’y sont inscrites qu’avec son accord, donné dans l’application. Les notes ne sont ni vérifiées ni validées par l’Éditeur.</p>
 <p>Le nom affiché sur chaque note est celui du compte de son auteur et ne peut pas être modifié. Un Membre ne peut modifier ou supprimer que ses propres notes.</p>
 
 <h3 id="cgu-7">Article 7 — Usages interdits</h3>
@@ -210,10 +210,10 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <p>L’Éditeur traite les données des Membres en tant que responsable de traitement, conformément au RGPD et au Data Protection Act 2017 de Maurice. Le détail figure dans la <a href="#confidentialite">politique de confidentialité</a> ; l’essentiel est résumé ici.</p>
 <ul>
   <li><strong>Données traitées</strong> : nom, numéro de téléphone, rôle dans le Cercle, heures de check-in, historique du Relais, notes du Journal, jeton de notification. Aucune localisation ni aucun signal du corps.</li>
-  <li><strong>Bases légales</strong> : l’exécution du contrat pour le fonctionnement du compte et du Relais ; le consentement explicite des personnes concernées pour les informations sensibles (par exemple relatives à la santé) qu’elles choisiraient d’inscrire dans le Journal.</li>
+  <li><strong>Bases légales</strong> : l’exécution du contrat pour le fonctionnement du compte et du Relais ; le consentement explicite des personnes concernées pour les informations sensibles (par exemple relatives à la santé) qu’elles choisiraient d’inscrire dans le Journal, demandé à part dans l’application et retirable à tout moment.</li>
   <li><strong>Hébergement</strong> : [prestataire], dans l’Union européenne.</li>
   <li><strong>Prestataires</strong> : hébergeur, service d’envoi de SMS [nom], services de notification d’Apple et de Google.</li>
-  <li><strong>Conservation</strong> : historique des check-in 30 jours ; journal technique du Relais 24 mois ; données d’un Cercle fermé supprimées 7 jours après sa fermeture ; autres données jusqu’à la suppression du compte ou du Cercle.</li>
+  <li><strong>Conservation</strong> : historique des check-in 30 jours ; journal technique du Relais 24 mois ; données d’un Cercle fermé supprimées 7 jours après sa fermeture ; invitations restées sans suite 30 jours ; autres données jusqu’à la suppression du compte ou du Cercle.</li>
   <li><strong>Aucune revente</strong> : les données ne sont ni vendues, ni utilisées à des fins publicitaires.</li>
 </ul>
 <p>Chaque Membre peut accéder à ses données, les rectifier, les effacer, en obtenir une copie, s’opposer à un traitement et retirer son consentement, en écrivant à [adresse e-mail de contact] ou au représentant de l’Éditeur dans l’Union européenne. Il peut saisir la CNIL (France), l’autorité de son pays de résidence dans l’Union européenne ou le Data Protection Office de Maurice.</p>
@@ -237,7 +237,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <ul class="sum" aria-label="Sections">
   <li><a href="#pc-1">1. Responsable</a></li><li><a href="#pc-2">2. Données et durées</a></li><li><a href="#pc-3">3. Ce qui n’est pas collecté</a></li>
   <li><a href="#pc-4">4. Bases légales</a></li><li><a href="#pc-5">5. Destinataires</a></li><li><a href="#pc-6">6. Sécurité</a></li>
-  <li><a href="#pc-7">7. Vos droits</a></li><li><a href="#pc-8">8. Mineurs et contact</a></li>
+  <li><a href="#pc-7">7. Vos droits</a></li><li><a href="#pc-8">8. Mineurs et contact</a></li><li><a href="#invitation">9. Invitation reçue</a></li>
 </ul>
 
 <h3 id="pc-1">1. Responsable du traitement</h3>
@@ -261,6 +261,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <tr><td>Notes du Journal</td><td>Membres</td><td>Organisation entre proches</td><td>Jusqu’à leur suppression, celle du compte de leur auteur ou celle du Cercle</td></tr>
 <tr><td>Jeton de notification</td><td>Appareil du Membre</td><td>Envoi des notifications</td><td>Jusqu’à la suppression du compte</td></tr>
 <tr><td>File d’envoi des messages</td><td>Générée par le service</td><td>Envoi et nouvelles tentatives</td><td>30 jours</td></tr>
+<tr><td>Nom et numéro d’une personne invitée, pas encore inscrite</td><td>L’aidant qui l’invite</td><td>Invitation, SMS d’information</td><td>30 jours si la personne ne s’inscrit pas</td></tr>
 </tbody></table>
 <p>Lorsqu’un Cercle est fermé, ses données sont supprimées 7 jours après la fermeture, sauf le journal technique des actions, conservé 24 mois.</p>
 
@@ -277,7 +278,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <table class="stack"><thead><tr><th>Traitement</th><th>Base légale (RGPD)</th></tr></thead><tbody>
 <tr><td>Compte, Cercle, check-in, Relais, envoi des messages</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
 <tr><td>Accord du Proche au fonctionnement du Cercle</td><td>Consentement (art. 6.1.a), donné dans l’application et retirable à tout moment</td></tr>
-<tr><td>Informations sensibles qu’un Membre choisit d’écrire dans le Journal (par exemple relatives à la santé)</td><td>Consentement explicite de la personne concernée (art. 9.2.a)</td></tr>
+<tr><td>Informations sensibles qu’un Membre choisit d’écrire dans le Journal (par exemple relatives à la santé)</td><td>Consentement explicite de la personne concernée (art. 9.2.a), demandé à part dans l’application, facultatif et retirable à tout moment dans les Réglages</td></tr>
 <tr><td>Journal technique des actions</td><td>Intérêt légitime : sécurité du service et preuve en cas de réclamation (art. 6.1.f)</td></tr>
 </tbody></table>
 <p>Retirer un consentement n’affecte pas les traitements faits avant ce retrait. Le Proche qui retire son accord entraîne la fermeture du Cercle.</p>
@@ -310,6 +311,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <table class="stack"><thead><tr><th>Ce que vous voulez faire</th><th>Comment</th></tr></thead><tbody>
 <tr><td>Supprimer votre compte et vos notes</td><td>Dans l’application : Réglages › Supprimer mon compte</td></tr>
 <tr><td>Retirer votre accord (Proche)</td><td>Dans l’application : fermer le Cercle</td></tr>
+<tr><td>Retirer votre accord aux informations de santé du Journal</td><td>Dans l’application : Réglages › Informations de santé dans le Journal</td></tr>
 <tr><td>Quitter un Cercle</td><td>Dans l’application : Cercle › Quitter</td></tr>
 <tr><td>Tout autre droit</td><td>Écrire à [adresse e-mail dédiée] ou au représentant dans l’Union européenne</td></tr>
 </tbody></table>
@@ -328,6 +330,15 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <p><strong>Mineurs.</strong> Maillage est réservé aux personnes majeures et ne collecte pas sciemment de données de mineurs.</p>
 <p><strong>Modifications.</strong> Toute modification importante de cette politique est annoncée dans l’application au moins 30 jours avant son entrée en vigueur.</p>
 <p><strong>Contact.</strong> [Nom de l’éditeur], [adresse postale], [adresse e-mail dédiée].</p>
+
+<h3 id="invitation">9. Vous avez reçu un SMS d’invitation</h3>
+<p>Un membre de votre entourage vous a invité dans un cercle Maillage, un outil de coordination familiale. Il a saisi votre prénom et votre numéro de téléphone ; l’Éditeur les utilise uniquement pour vous envoyer ce SMS et rattacher votre compte au cercle si vous vous inscrivez.</p>
+<ul>
+  <li><strong>Vous ne souhaitez pas participer</strong> : vous n’avez rien à faire. Votre prénom et votre numéro sont effacés automatiquement 30 jours après l’invitation. Vous ne recevrez pas d’autre SMS pour cette invitation.</li>
+  <li><strong>Vous voulez qu’ils soient effacés tout de suite, ou vous opposer à toute nouvelle invitation</strong> : écrivez à [adresse e-mail dédiée] en indiquant votre numéro.</li>
+  <li><strong>Vous souhaitez participer</strong> : installez Maillage et connectez-vous avec le numéro qui a reçu le SMS. Si vous êtes la personne autour de qui le cercle est créé, rien ne fonctionne sans votre accord, donné par vous-même dans l’application.</li>
+</ul>
+<p>Vos droits et les coordonnées de l’Éditeur figurent aux sections 1 et 7.</p>
 </section>
 
 </div></main>
