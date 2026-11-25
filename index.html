@@ -209,10 +209,10 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <h3 id="cgu-10">Article 10 — Données personnelles</h3>
 <p>L’Éditeur traite les données des Membres en tant que responsable de traitement, conformément au RGPD et au Data Protection Act 2017 de Maurice. Le détail figure dans la <a href="#confidentialite">politique de confidentialité</a> ; l’essentiel est résumé ici.</p>
 <ul>
-  <li><strong>Données traitées</strong> : nom, numéro de téléphone, rôle dans le Cercle, heures de check-in, historique du Relais, notes du Journal, jeton de notification. Aucune localisation ni aucun signal du corps.</li>
+  <li><strong>Données traitées</strong> : nom, numéro de téléphone, rôle dans le Cercle, heures de check-in, historique du Relais, notes du Journal, jeton de notification, état de l’abonnement. Aucune localisation ni aucun signal du corps.</li>
   <li><strong>Bases légales</strong> : l’exécution du contrat pour le fonctionnement du compte et du Relais ; le consentement explicite des personnes concernées pour les informations sensibles (par exemple relatives à la santé) qu’elles choisiraient d’inscrire dans le Journal, demandé à part dans l’application et retirable à tout moment.</li>
   <li><strong>Hébergement</strong> : [prestataire], dans l’Union européenne.</li>
-  <li><strong>Prestataires</strong> : hébergeur, service d’envoi de SMS [nom], services de notification d’Apple et de Google.</li>
+  <li><strong>Prestataires</strong> : hébergeur, service d’envoi de SMS [nom], services de notification d’Apple et de Google, service de suivi des abonnements (RevenueCat).</li>
   <li><strong>Conservation</strong> : historique des check-in 30 jours ; journal technique du Relais 24 mois ; données d’un Cercle fermé supprimées 7 jours après sa fermeture ; invitations restées sans suite 30 jours ; autres données jusqu’à la suppression du compte ou du Cercle.</li>
   <li><strong>Aucune revente</strong> : les données ne sont ni vendues, ni utilisées à des fins publicitaires.</li>
 </ul>
@@ -262,6 +262,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <tr><td>Jeton de notification</td><td>Appareil du Membre</td><td>Envoi des notifications</td><td>Jusqu’à la suppression du compte</td></tr>
 <tr><td>File d’envoi des messages</td><td>Générée par le service</td><td>Envoi et nouvelles tentatives</td><td>30 jours</td></tr>
 <tr><td>Nom et numéro d’une personne invitée, pas encore inscrite</td><td>L’aidant qui l’invite</td><td>Invitation, SMS d’information</td><td>30 jours si la personne ne s’inscrit pas</td></tr>
+<tr><td>État de l’abonnement (essai, échéance, renouvellement, store)</td><td>Apple ou Google, via RevenueCat</td><td>Fonctionnement de l’abonnement, préavis d’arrêt du Relais</td><td>Jusqu’à la suppression du compte</td></tr>
 </tbody></table>
 <p>Lorsqu’un Cercle est fermé, ses données sont supprimées 7 jours après la fermeture, sauf le journal technique des actions, conservé 24 mois.</p>
 
@@ -270,7 +271,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
   <li>Aucune localisation : l’application ne demande pas l’accès à la position du téléphone.</li>
   <li>Aucun signal du corps ni aucun mouvement : pas d’accéléromètre, de podomètre, de rythme cardiaque ni de sommeil.</li>
   <li>Aucun contact du répertoire : les invitations se font en saisissant un numéro.</li>
-  <li>Aucune donnée de paiement : l’abonnement est géré par Apple ou Google, qui ne transmettent pas vos coordonnées bancaires à l’Éditeur.</li>
+  <li>Aucune donnée de paiement : l’abonnement est géré par Apple ou Google, qui ne transmettent pas vos coordonnées bancaires à l’Éditeur. L’Éditeur ne reçoit que l’état de l’abonnement (essai, actif, date d’échéance).</li>
   <li>Aucun suivi publicitaire, aucune revente de données.</li>
 </ul>
 
@@ -289,6 +290,7 @@ footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--m
 <table class="stack"><thead><tr><th>Prestataire</th><th>Rôle</th><th>Données concernées</th><th>Pays</th></tr></thead><tbody>
 <tr><td>[Hébergeur]</td><td>Hébergement de la base de données</td><td>Toutes les données du service</td><td>Union européenne ([pays])</td></tr>
 <tr><td>Twilio</td><td>Envoi des SMS du Relais</td><td>Numéro de téléphone, texte du message</td><td>États-Unis</td></tr>
+<tr><td>RevenueCat</td><td>Suivi des abonnements App Store et Google Play</td><td>Identifiant de compte Maillage, état de l’abonnement</td><td>États-Unis</td></tr>
 <tr><td>Expo, Apple, Google</td><td>Envoi des notifications</td><td>Jeton de notification, texte du message</td><td>États-Unis</td></tr>
 </tbody></table>
 <p>Les messages ne contiennent que le prénom du Proche et l’état du check-in ou du Relais, jamais le contenu du Journal.</p>
