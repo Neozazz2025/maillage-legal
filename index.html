@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Maillage — Informations légales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formel et calme, un texte de référence qu'on lit en confiance.
+   IDEA: un livret de conditions bien composé, comme un contrat imprimé.
+   PICTURE: le texte lui-même ; tableaux soigneusement filetés.
+   COLOUR and TYPE: blanc, encre, vert pétrole de l'app ; Source Serif 4 pour les titres, Inter pour le texte.
+   LAYOUT: une colonne de lecture de 70 caractères, sommaire en tête, ancres #cgu et #confidentialite. */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1416);--ink:light-dark(#141b22,#e8ecee);--muted:light-dark(#5a6672,#a3aeb6);--rule:light-dark(#dde3e6,#2a3439);--brand:light-dark(#0f5257,#7cc4c0);--panel:light-dark(#f3f7f7,#162024);--todo:light-dark(#fff1b8,#4a3f10)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+header.top{border-bottom:1px solid var(--rule);padding:28px max(5vw,16px) 22px}
+.wrap{max-width:760px;margin:0 auto}
+.brand{font:700 15px/1 Inter,sans-serif;color:var(--brand);letter-spacing:.01em}
+h1{font:600 clamp(30px,5vw,44px)/1.08 "Source Serif 4",Georgia,serif;margin:14px 0 8px;text-wrap:balance}
+.lead{color:var(--muted);margin:0}
+nav.toc{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--rule);padding:10px max(5vw,16px)}
+nav.toc .wrap{display:flex;gap:8px;flex-wrap:wrap}
+nav.toc a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--brand);border-radius:999px;color:var(--brand);text-decoration:none;font-weight:600;font-size:15px}
+nav.toc a:focus-visible,a:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+main{padding:8px max(5vw,16px) 64px}
+section.doc{padding-top:36px}
+section.doc+section.doc{margin-top:40px;border-top:3px solid var(--ink)}
+h2{font:600 clamp(26px,4vw,34px)/1.1 "Source Serif 4",Georgia,serif;margin:0 0 6px;text-wrap:balance}
+.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+h3{font:700 19px/1.3 Inter,sans-serif;margin:34px 0 8px;padding-top:14px;border-top:1px solid var(--rule)}
+h4{font:700 16.5px/1.35 Inter,sans-serif;margin:22px 0 6px}
+p,li{max-width:70ch}
+ul,ol{padding-inline-start:1.3em}
+li{margin:4px 0}
+a{color:var(--brand)}
+.notice{background:var(--panel);border-left:4px solid var(--brand);padding:14px 18px;margin:18px 0;font-weight:600}
+.sum{display:flex;flex-wrap:wrap;gap:4px 14px;margin:8px 0 0;padding:0;list-style:none;font-size:14.5px}
+.sum li{margin:0}
+table{width:100%;border-collapse:collapse;margin:12px 0 6px;font-size:15px}
+th,td{text-align:start;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--rule)}
+thead th{border-bottom:2px solid var(--ink);font-weight:700}
+mark.todo{background:var(--todo);color:inherit;padding:0 3px;border-radius:3px}
+footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);color:var(--muted);font-size:14px}
+.nw{white-space:nowrap}
+@media(max-width:600px){table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8.5em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:8em;margin-inline-start:-8.5em;color:var(--muted);font-weight:600;white-space:normal}.stack td:empty{display:none}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand">Maillage</div>
+  <h1>Informations légales</h1>
+  <p class="lead">Conditions générales d’utilisation et politique de confidentialité de l’application Maillage. Version du 25 novembre 2026.</p>
+</div></header>
+<nav class="toc" aria-label="Documents"><div class="wrap">
+  <a href="#cgu">Conditions d’utilisation</a>
+  <a href="#confidentialite">Confidentialité</a>
+</div></nav>
+
+<main><div class="wrap">
+
+<section class="doc" id="cgu" aria-labelledby="t-cgu">
+<h2 id="t-cgu">Conditions générales d’utilisation</h2>
+<p class="meta">En vigueur au 25 novembre 2026</p>
+<ul class="sum" aria-label="Articles">
+  <li><a href="#cgu-1">1. Objet</a></li><li><a href="#cgu-2">2. Définitions</a></li><li><a href="#cgu-3">3. Nature du service</a></li>
+  <li><a href="#cgu-4">4. Comptes et consentement</a></li><li><a href="#cgu-5">5. Check-in et Relais</a></li><li><a href="#cgu-6">6. Journal</a></li>
+  <li><a href="#cgu-7">7. Usages interdits</a></li><li><a href="#cgu-8">8. Abonnement</a></li><li><a href="#cgu-9">9. Responsabilité</a></li>
+  <li><a href="#cgu-10">10. Données</a></li><li><a href="#cgu-11">11. Durée et fermeture</a></li><li><a href="#cgu-12">12. Litiges et contact</a></li>
+</ul>
+
+<h3 id="cgu-1">Article 1 — Objet et éditeur</h3>
+<p>Les présentes conditions générales d’utilisation (« CGU ») règlent l’accès à l’application Maillage et son utilisation. Créer un compte ou utiliser l’application vaut acceptation des CGU.</p>
+<p>Maillage est éditée par [Nom de l’éditeur ou de la société], [forme juridique], dont le siège est situé [adresse], République de Maurice, immatriculée sous le numéro [numéro d’immatriculation] (« l’Éditeur »).</p>
+<ul>
+  <li>Contact : [adresse e-mail de contact]</li>
+  <li>Enregistrement auprès du Data Protection Office (Maurice) : [numéro d’enregistrement]</li>
+  <li>Représentant dans l’Union européenne (RGPD, art. 27) : [nom et adresse du représentant]</li>
+  <li>Hébergement des données : [prestataire], région [Union européenne — pays]</li>
+</ul>
+
+<h3 id="cgu-2">Article 2 — Définitions</h3>
+<table class="stack"><thead><tr><th>Terme</th><th>Définition</th></tr></thead><tbody>
+<tr><td>Cercle</td><td>Groupe privé de membres de la famille et d’amis, créé dans l’application autour d’une personne.</td></tr>
+<tr><td>Proche</td><td>Personne autour de laquelle le Cercle est créé et qui fait le check-in quotidien.</td></tr>
+<tr><td>Aidant principal</td><td>Membre qui crée et administre le Cercle.</td></tr>
+<tr><td>Aidant familial</td><td>Membre de la famille ou de l’entourage invité dans le Cercle.</td></tr>
+<tr><td>Témoin de confiance</td><td>Personne de l’entourage (voisin, ami) invitée dans le Cercle, avec des droits restreints.</td></tr>
+<tr><td>Membre</td><td>Toute personne inscrite dans un Cercle, quel que soit son rôle.</td></tr>
+<tr><td>Check-in</td><td>Geste fait par le Proche dans l’application pour indiquer lui-même que tout va bien.</td></tr>
+<tr><td>Relais</td><td>Enchaînement de messages envoyés aux Membres lorsque le check-in n’a pas été fait à l’heure convenue, ou à la demande d’un Membre.</td></tr>
+<tr><td>Journal</td><td>Espace de notes partagé entre les Membres d’un Cercle.</td></tr>
+</tbody></table>
+
+<h3 id="cgu-3">Article 3 — Nature du service</h3>
+<p>Maillage est un outil de coordination familiale : il aide des proches à prendre des nouvelles les uns des autres et à s’organiser entre eux.</p>
+<h4>3.1 Ce que fait Maillage</h4>
+<p>Maillage permet à un Cercle :</p>
+<ol>
+  <li>au Proche, d’indiquer chaque jour d’un geste que tout va bien (le check-in) ;</li>
+  <li>aux autres Membres, d’être prévenus quand ce check-in n’a pas été fait à l’heure choisie par le Cercle, afin de prendre des nouvelles et de se répartir qui s’en charge ;</li>
+  <li>de partager des notes dans un Journal commun ;</li>
+  <li>d’organiser l’entraide au quotidien : disponibilités, passages, informations pratiques.</li>
+</ol>
+<h4>3.2 Sur quoi repose le Relais</h4>
+<p>Le Relais repose sur un seul fait : le check-in a-t-il été fait à l’heure convenue ? Il peut aussi être lancé à la demande d’un Membre.</p>
+<p>Maillage ne mesure et n’interprète rien d’autre. Il ne collecte aucun signal du corps, aucun mouvement, aucune localisation. Il ne sait pas si une personne va bien : il sait seulement si le check-in a été fait.</p>
+<h4>3.3 Ce que Maillage n’est pas</h4>
+<p>Maillage n’a aucune finalité médicale et n’est pas un dispositif médical au sens du règlement (UE) 2017/745. Il ne remplace ni un professionnel, ni les services de secours. Personne ne lit les messages du Relais à la place des Membres. Aucune information de l’application ne constitue un avis professionnel.</p>
+<p class="notice">En cas d’urgence, appelez immédiatement le <span class="nw">15</span>, le <span class="nw">112</span> ou le <span class="nw">18</span>. Les personnes sourdes ou malentendantes peuvent joindre le <span class="nw">114</span> par SMS ou par l’application dédiée.</p>
+<h4>3.4 Engagement de l’Éditeur</h4>
+<p>L’Éditeur présente Maillage, dans l’application, sur les boutiques d’applications et dans toute communication, uniquement comme un outil de coordination familiale conforme au 3.1.</p>
+<h4>3.5 Usage en dehors de ce cadre</h4>
+<p>Tout usage de Maillage pour une autre finalité que celle décrite au 3.1 se fait hors du cadre des CGU et sous la seule responsabilité de l’utilisateur.</p>
+
+<h3 id="cgu-4">Article 4 — Comptes, Cercle et consentement du Proche</h3>
+<h4>4.1 Compte</h4>
+<p>Maillage est réservé aux personnes majeures. Chaque Membre crée un compte personnel, confirmé par un code envoyé sur son numéro de téléphone. Il fournit des informations exactes et garde l’accès à son compte confidentiel.</p>
+<h4>4.2 Usage privé uniquement</h4>
+<p>Un Cercle réunit des membres d’une famille et leurs amis, dans un cadre strictement privé. Maillage ne peut pas être utilisé dans le cadre d’une activité professionnelle, quelle qu’elle soit, ni pour y enregistrer des informations recueillies à cette occasion.</p>
+<h4>4.3 Consentement du Proche</h4>
+<p>Maillage ne peut être utilisé qu’avec le consentement libre et éclairé du Proche, donné par lui-même dans l’application. Il est interdit d’installer ou de configurer Maillage à son insu.</p>
+<p>Tant que le Proche n’a pas donné son accord, le check-in et le Relais ne fonctionnent pas. Chaque Membre accepte les CGU avant d’utiliser le Cercle.</p>
+<p>Lorsque le Proche bénéficie d’une mesure de protection juridique, le consentement est donné dans les conditions prévues par cette mesure, et le Proche en est informé dans toute la mesure possible.</p>
+<p>Le Proche peut à tout moment :</p>
+<ul>
+  <li>mettre le check-in en pause, jusqu’à 48 heures d’affilée ;</li>
+  <li>retirer son consentement, ce qui entraîne la fermeture du Cercle (<a href="#cgu-11">article 11</a>).</li>
+</ul>
+<h4>4.4 Rôles et invitations</h4>
+<p>L’Aidant principal invite les autres Membres par leur numéro de téléphone. Une invitation ne prend effet qu’une fois acceptée par la personne invitée. Chaque rôle donne des droits différents :</p>
+<table class="stack"><thead><tr><th>Rôle</th><th>Fait le check-in</th><th>Lit le Journal</th><th>Voit les numéros</th></tr></thead><tbody>
+<tr><td>Proche</td><td>Oui</td><td>Oui</td><td>Tous</td></tr>
+<tr><td>Aidant principal, Aidant familial</td><td>Non</td><td>Oui</td><td>Tous</td></tr>
+<tr><td>Témoin de confiance</td><td>Non</td><td>Ses propres notes seulement</td><td>Proche et aidants</td></tr>
+</tbody></table>
+<p>Un Membre autre que le Proche peut quitter le Cercle à tout moment.</p>
+
+<h3 id="cgu-5">Article 5 — Check-in quotidien, Relais et limites techniques</h3>
+<h4>5.1 Déroulé</h4>
+<p>Le Cercle choisit une heure limite de check-in et un délai de grâce. Avec les réglages par défaut (<span class="nw">10 h 00</span> et 30 minutes) :</p>
+<ol>
+  <li>à <span class="nw">10 h 00</span> sans check-in, le Proche reçoit un rappel ;</li>
+  <li>à <span class="nw">10 h 30</span> sans check-in, il lui est proposé de faire son check-in avant que le Cercle soit prévenu ;</li>
+  <li>sans réponse au bout d’environ une minute, les aidants reçoivent un message ;</li>
+  <li>si aucun aidant n’indique « Je m’en occupe » dans les 5 minutes environ, le Témoin de confiance reçoit un message.</li>
+</ol>
+<p>Ces délais sont indicatifs : chaque étape peut prendre davantage de temps. Le Proche peut aussi prévenir ses aidants à tout moment depuis l’application.</p>
+<p>Si le Proche fait son check-in après que le Cercle a été prévenu, les Membres concernés en sont informés.</p>
+<p>Pour éviter les abus, le Relais ne peut pas être lancé manuellement plus de 5 fois par Cercle sur 24 heures.</p>
+<h4>5.2 Ce que le check-in ne dit pas</h4>
+<p>Le check-in indique seulement qu’un geste a été fait dans l’application à un moment donné. Maillage n’a aucune information sur ce qui se passe entre deux check-in : après le check-in du jour, aucun message n’est envoyé avant l’heure limite du lendemain.</p>
+<h4>5.3 Limites techniques</h4>
+<p>La réception des messages dépend d’éléments que l’Éditeur ne maîtrise pas : couverture réseau, téléphone allumé et chargé, notifications autorisées, modes « Ne pas déranger » ou économie d’énergie, opérateurs téléphoniques, services d’Apple et de Google. Un message peut donc arriver en retard ou ne pas arriver.</p>
+<p>Les SMS du Relais sont envoyés par l’expéditeur « Maillage » ; il n’est pas possible d’y répondre.</p>
+<p>L’Éditeur met en œuvre les moyens raisonnables pour faire fonctionner le service. Il ne garantit ni une disponibilité permanente, ni la remise de chaque message, ni un délai de remise.</p>
+<h4>5.4 Engagements des Membres</h4>
+<p>Chaque Membre garde les notifications de Maillage activées et tient son numéro de téléphone à jour. Maillage complète les liens habituels entre proches (appels, visites) et ne les remplace pas.</p>
+
+<h3 id="cgu-6">Article 6 — Journal partagé</h3>
+<p>Le Journal permet aux Membres d’écrire et de partager des notes. Maillage se limite à les conserver et à les afficher aux Membres autorisés : il ne les analyse pas et n’envoie aucun message à partir de leur contenu.</p>
+<p>Chaque Membre est responsable de ce qu’il écrit et n’y inscrit que ce qui est utile à l’organisation entre proches, dans le respect de la vie privée du Proche. Les notes ne sont ni vérifiées ni validées par l’Éditeur.</p>
+<p>Le nom affiché sur chaque note est celui du compte de son auteur et ne peut pas être modifié. Un Membre ne peut modifier ou supprimer que ses propres notes.</p>
+
+<h3 id="cgu-7">Article 7 — Usages interdits</h3>
+<p>Il est interdit :</p>
+<ul>
+  <li>d’utiliser Maillage sans le consentement du Proche, ou pour contrôler les faits et gestes d’une personne ;</li>
+  <li>de faire le check-in à la place du Proche, ou de chercher à contourner le Relais ;</li>
+  <li>d’utiliser Maillage dans le cadre d’une activité professionnelle ;</li>
+  <li>de présenter Maillage à quiconque autrement que comme un outil de coordination familiale ;</li>
+  <li>de publier dans le Journal des contenus illégaux, injurieux ou portant atteinte aux droits d’autrui ;</li>
+  <li>d’inviter une personne sans son accord ou d’usurper l’identité d’un Membre ;</li>
+  <li>de tenter d’accéder aux données d’un Cercle dont on n’est pas Membre, ou de perturber le fonctionnement du service.</li>
+</ul>
+<p>En cas de manquement, l’Éditeur peut suspendre ou fermer le compte concerné, après avoir prévenu le Membre lorsque la situation le permet.</p>
+
+<h3 id="cgu-8">Article 8 — Abonnement, prix et droit de rétractation</h3>
+<h4>8.1 Abonnement</h4>
+<p>Un abonnement couvre un Cercle et tous ses Membres. Il est souscrit par l’Aidant principal au prix de [9,99 € TTC par mois], affiché dans l’application avant tout paiement. [Période d’essai gratuite : durée à définir, ou supprimer cette phrase.]</p>
+<p>Le paiement, la facturation et le renouvellement passent par l’App Store (Apple) ou Google Play (Google), selon leurs propres conditions. L’abonnement se renouvelle automatiquement chaque mois. L’Aidant principal peut le résilier à tout moment depuis les réglages de son compte Apple ou Google ; la résiliation prend effet à la fin de la période en cours.</p>
+<h4>8.2 Droit de rétractation</h4>
+<p>Le consommateur dispose d’un délai de 14 jours à compter de la souscription pour se rétracter, sans motif. S’il a demandé que le service commence pendant ce délai, il paie le montant correspondant au service fourni jusqu’à sa rétractation. La demande se fait auprès d’Apple ou de Google, ou auprès de l’Éditeur à [adresse e-mail de contact].</p>
+<h4>8.3 Évolution du prix</h4>
+<p>Tout changement de prix est annoncé au moins 30 jours avant son application. L’Aidant principal peut résilier avant cette date s’il n’accepte pas le nouveau prix.</p>
+
+<h3 id="cgu-9">Article 9 — Responsabilité</h3>
+<p>L’Éditeur est tenu d’une obligation de moyens pour fournir le service décrit à l’<a href="#cgu-3">article 3</a>.</p>
+<p>Dans les limites permises par la loi, l’Éditeur n’est pas responsable :</p>
+<ul>
+  <li>de ce qui arrive au Proche : Maillage sait seulement si le check-in a été fait (article 3.2) ;</li>
+  <li>d’un retard ou d’une absence de message dû aux éléments décrits à l’article 5.3 ;</li>
+  <li>des décisions des Membres, de leurs actions ou de leur inaction, qu’un message ait été reçu ou non ;</li>
+  <li>du contenu du Journal, écrit par les Membres ;</li>
+  <li>d’un usage de Maillage contraire aux articles 3.5 et 7.</li>
+</ul>
+<p>Chaque Membre décide seul des suites à donner à un message. En cas d’inquiétude, il contacte directement le Proche et, si nécessaire, les numéros indiqués à l’article 3.3.</p>
+<p>Rien dans les CGU ne limite la responsabilité de l’Éditeur en cas de dommage corporel causé par sa faute, de faute lourde ou intentionnelle, ni les droits que le consommateur tient des dispositions impératives de la loi de son pays de résidence.</p>
+
+<h3 id="cgu-10">Article 10 — Données personnelles</h3>
+<p>L’Éditeur traite les données des Membres en tant que responsable de traitement, conformément au RGPD et au Data Protection Act 2017 de Maurice. Le détail figure dans la <a href="#confidentialite">politique de confidentialité</a> ; l’essentiel est résumé ici.</p>
+<ul>
+  <li><strong>Données traitées</strong> : nom, numéro de téléphone, rôle dans le Cercle, heures de check-in, historique du Relais, notes du Journal, jeton de notification. Aucune localisation ni aucun signal du corps.</li>
+  <li><strong>Bases légales</strong> : l’exécution du contrat pour le fonctionnement du compte et du Relais ; le consentement explicite des personnes concernées pour les informations sensibles (par exemple relatives à la santé) qu’elles choisiraient d’inscrire dans le Journal.</li>
+  <li><strong>Hébergement</strong> : [prestataire], dans l’Union européenne.</li>
+  <li><strong>Prestataires</strong> : hébergeur, service d’envoi de SMS [nom], services de notification d’Apple et de Google.</li>
+  <li><strong>Conservation</strong> : historique des check-in 30 jours ; journal technique du Relais 24 mois ; données d’un Cercle fermé supprimées 7 jours après sa fermeture ; autres données jusqu’à la suppression du compte ou du Cercle.</li>
+  <li><strong>Aucune revente</strong> : les données ne sont ni vendues, ni utilisées à des fins publicitaires.</li>
+</ul>
+<p>Chaque Membre peut accéder à ses données, les rectifier, les effacer, en obtenir une copie, s’opposer à un traitement et retirer son consentement, en écrivant à [adresse e-mail de contact] ou au représentant de l’Éditeur dans l’Union européenne. Il peut saisir la CNIL (France), l’autorité de son pays de résidence dans l’Union européenne ou le Data Protection Office de Maurice.</p>
+
+<h3 id="cgu-11">Article 11 — Durée, résiliation et fermeture du Cercle</h3>
+<p>Les CGU s’appliquent tant que le Membre a un compte. Chaque Membre peut supprimer son compte à tout moment depuis l’application ou en écrivant à [adresse e-mail de contact].</p>
+<p>La suppression d’un compte efface les notes que le Membre a écrites dans le Journal. Si ce Membre est le Proche, ou le seul Aidant principal d’un Cercle, ce Cercle est fermé.</p>
+<p>Le Cercle est fermé lorsque l’Aidant principal le demande, ou lorsque le Proche retire son consentement. Les Membres en sont prévenus. Les données du Cercle sont alors supprimées sous 7 jours, à l’exception du journal technique du Relais, conservé 24 mois (<a href="#cgu-10">article 10</a>).</p>
+<p>La suppression d’un compte ne résilie pas l’abonnement souscrit auprès d’Apple ou de Google : l’Aidant principal doit le résilier depuis les réglages de son compte Apple ou Google.</p>
+
+<h3 id="cgu-12">Article 12 — Modifications, droit applicable, litiges et contact</h3>
+<p><strong>Modifications.</strong> L’Éditeur peut modifier les CGU. Toute modification importante est annoncée dans l’application au moins 30 jours avant son entrée en vigueur. Le Membre qui la refuse peut supprimer son compte avant cette date.</p>
+<p><strong>Droit applicable.</strong> Les CGU sont soumises au droit [mauricien]. Le consommateur résidant dans l’Union européenne conserve la protection des dispositions impératives du droit de son pays de résidence.</p>
+<p><strong>Litiges.</strong> En cas de réclamation, le Membre écrit d’abord à [adresse e-mail de contact] ; l’Éditeur répond sous 30 jours. À défaut d’accord, le consommateur peut recourir gratuitement à un médiateur de la consommation : [nom et coordonnées du médiateur]. Il peut aussi saisir le tribunal compétent de son lieu de résidence.</p>
+<p><strong>Contact.</strong> [Nom de l’éditeur], [adresse postale], [adresse e-mail de contact].</p>
+</section>
+
+<section class="doc" id="confidentialite" aria-labelledby="t-pc">
+<h2 id="t-pc">Politique de confidentialité</h2>
+<p class="meta">En vigueur au 25 novembre 2026</p>
+<ul class="sum" aria-label="Sections">
+  <li><a href="#pc-1">1. Responsable</a></li><li><a href="#pc-2">2. Données et durées</a></li><li><a href="#pc-3">3. Ce qui n’est pas collecté</a></li>
+  <li><a href="#pc-4">4. Bases légales</a></li><li><a href="#pc-5">5. Destinataires</a></li><li><a href="#pc-6">6. Sécurité</a></li>
+  <li><a href="#pc-7">7. Vos droits</a></li><li><a href="#pc-8">8. Mineurs et contact</a></li>
+</ul>
+
+<h3 id="pc-1">1. Responsable du traitement</h3>
+<p>Les données traitées par l’application Maillage sont sous la responsabilité de [Nom de l’éditeur ou de la société], [adresse], République de Maurice (« l’Éditeur »).</p>
+<ul>
+  <li>Contact pour toute question sur vos données : [adresse e-mail dédiée]</li>
+  <li>Enregistrement auprès du Data Protection Office (Maurice) : [numéro]</li>
+  <li>Représentant dans l’Union européenne (RGPD, art. 27) : [nom, adresse, e-mail]</li>
+</ul>
+<p>Maillage est un outil de coordination familiale. Cette politique explique quelles données il utilise, pourquoi, pendant combien de temps, et comment exercer vos droits.</p>
+
+<h3 id="pc-2">2. Données collectées, usage et durée de conservation</h3>
+<p>Maillage ne collecte que les données nécessaires au fonctionnement du Cercle. Les durées ci-dessous sont appliquées automatiquement par le service.</p>
+<table class="stack"><thead><tr><th>Donnée</th><th>Fournie par</th><th>Usage</th><th>Conservation</th></tr></thead><tbody>
+<tr><td>Nom affiché, numéro de téléphone</td><td>Le Membre, ou l’aidant qui l’invite</td><td>Compte, invitations, messages du Relais</td><td>Jusqu’à la suppression du compte ou du Cercle</td></tr>
+<tr><td>Rôle dans le Cercle, date d’accord aux CGU</td><td>Le Membre</td><td>Droits d’accès, preuve de l’accord</td><td>Jusqu’à la suppression du compte ou du Cercle</td></tr>
+<tr><td>Réglages du Cercle (heure du check-in, fuseau horaire, pauses)</td><td>Aidant principal, Proche</td><td>Fonctionnement du check-in</td><td>Jusqu’à la fermeture du Cercle</td></tr>
+<tr><td>Heures de check-in, visites signalées</td><td>Proche, Membres</td><td>Fonctionnement du Relais</td><td>30 jours</td></tr>
+<tr><td>Historique du Relais (qui a été prévenu, qui a pris des nouvelles, quand)</td><td>Généré par le service</td><td>Fonctionnement, preuve en cas de réclamation</td><td>24 mois</td></tr>
+<tr><td>Journal technique des actions</td><td>Généré par le service</td><td>Sécurité, preuve en cas de réclamation</td><td>24 mois</td></tr>
+<tr><td>Notes du Journal</td><td>Membres</td><td>Organisation entre proches</td><td>Jusqu’à leur suppression, celle du compte de leur auteur ou celle du Cercle</td></tr>
+<tr><td>Jeton de notification</td><td>Appareil du Membre</td><td>Envoi des notifications</td><td>Jusqu’à la suppression du compte</td></tr>
+<tr><td>File d’envoi des messages</td><td>Générée par le service</td><td>Envoi et nouvelles tentatives</td><td>30 jours</td></tr>
+</tbody></table>
+<p>Lorsqu’un Cercle est fermé, ses données sont supprimées 7 jours après la fermeture, sauf le journal technique des actions, conservé 24 mois.</p>
+
+<h3 id="pc-3">3. Ce que Maillage ne collecte pas</h3>
+<ul>
+  <li>Aucune localisation : l’application ne demande pas l’accès à la position du téléphone.</li>
+  <li>Aucun signal du corps ni aucun mouvement : pas d’accéléromètre, de podomètre, de rythme cardiaque ni de sommeil.</li>
+  <li>Aucun contact du répertoire : les invitations se font en saisissant un numéro.</li>
+  <li>Aucune donnée de paiement : l’abonnement est géré par Apple ou Google, qui ne transmettent pas vos coordonnées bancaires à l’Éditeur.</li>
+  <li>Aucun suivi publicitaire, aucune revente de données.</li>
+</ul>
+
+<h3 id="pc-4">4. Bases légales</h3>
+<table class="stack"><thead><tr><th>Traitement</th><th>Base légale (RGPD)</th></tr></thead><tbody>
+<tr><td>Compte, Cercle, check-in, Relais, envoi des messages</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+<tr><td>Accord du Proche au fonctionnement du Cercle</td><td>Consentement (art. 6.1.a), donné dans l’application et retirable à tout moment</td></tr>
+<tr><td>Informations sensibles qu’un Membre choisit d’écrire dans le Journal (par exemple relatives à la santé)</td><td>Consentement explicite de la personne concernée (art. 9.2.a)</td></tr>
+<tr><td>Journal technique des actions</td><td>Intérêt légitime : sécurité du service et preuve en cas de réclamation (art. 6.1.f)</td></tr>
+</tbody></table>
+<p>Retirer un consentement n’affecte pas les traitements faits avant ce retrait. Le Proche qui retire son accord entraîne la fermeture du Cercle.</p>
+
+<h3 id="pc-5">5. Destinataires, prestataires et transferts hors de l’Union européenne</h3>
+<p><strong>Membres du Cercle.</strong> Chaque Membre ne voit que ce que son rôle permet (<a href="#cgu-4">CGU, article 4.4</a>). Le Témoin de confiance ne lit pas le Journal et ne voit que les numéros du Proche et des aidants.</p>
+<p><strong>Prestataires.</strong> L’Éditeur fait appel à des prestataires qui traitent les données uniquement pour son compte :</p>
+<table class="stack"><thead><tr><th>Prestataire</th><th>Rôle</th><th>Données concernées</th><th>Pays</th></tr></thead><tbody>
+<tr><td>[Hébergeur]</td><td>Hébergement de la base de données</td><td>Toutes les données du service</td><td>Union européenne ([pays])</td></tr>
+<tr><td>Twilio</td><td>Envoi des SMS du Relais</td><td>Numéro de téléphone, texte du message</td><td>États-Unis</td></tr>
+<tr><td>Expo, Apple, Google</td><td>Envoi des notifications</td><td>Jeton de notification, texte du message</td><td>États-Unis</td></tr>
+</tbody></table>
+<p>Les messages ne contiennent que le prénom du Proche et l’état du check-in ou du Relais, jamais le contenu du Journal.</p>
+<p><strong>Apple et Google</strong> gèrent les abonnements en tant que responsables de traitement indépendants, selon leurs propres politiques.</p>
+<p><strong>Transferts.</strong> Les transferts vers les États-Unis sont encadrés par le cadre de protection des données UE–États-Unis lorsque le prestataire y est certifié, et à défaut par les clauses contractuelles types de la Commission européenne. L’Éditeur, établi à Maurice, n’accède aux données que pour l’administration du service, avec les mêmes garanties.</p>
+<p><strong>Autorités.</strong> Les données ne sont communiquées à une autorité que si la loi l’impose. Elles ne sont jamais vendues.</p>
+
+<h3 id="pc-6">6. Sécurité des données</h3>
+<ul>
+  <li>Connexion par code à usage unique envoyé par SMS ; aucun mot de passe à retenir.</li>
+  <li>Échanges chiffrés entre l’application et le serveur (HTTPS).</li>
+  <li>Cloisonnement des Cercles par des règles d’accès appliquées directement dans la base de données : un Membre ne peut lire que les Cercles dont il fait partie, selon son rôle.</li>
+  <li>Journal technique des actions qui ne peut être ni modifié ni effacé avant 24 mois.</li>
+  <li>Accès de l’Éditeur limité à l’administration du service.</li>
+</ul>
+<p>En cas de violation de données présentant un risque, l’Éditeur prévient l’autorité compétente dans les 72 heures et, si le risque est élevé, les personnes concernées.</p>
+
+<h3 id="pc-7">7. Vos droits et comment les exercer</h3>
+<p>Vous pouvez accéder à vos données, les rectifier, les effacer, en recevoir une copie, vous opposer à un traitement fondé sur l’intérêt légitime, en limiter l’usage et retirer votre consentement.</p>
+<table class="stack"><thead><tr><th>Ce que vous voulez faire</th><th>Comment</th></tr></thead><tbody>
+<tr><td>Supprimer votre compte et vos notes</td><td>Dans l’application : Réglages › Supprimer mon compte</td></tr>
+<tr><td>Retirer votre accord (Proche)</td><td>Dans l’application : fermer le Cercle</td></tr>
+<tr><td>Quitter un Cercle</td><td>Dans l’application : Cercle › Quitter</td></tr>
+<tr><td>Tout autre droit</td><td>Écrire à [adresse e-mail dédiée] ou au représentant dans l’Union européenne</td></tr>
+</tbody></table>
+<p>L’Éditeur répond dans un délai d’un mois. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>), l’autorité de protection des données de votre pays de résidence dans l’Union européenne, ou le Data Protection Office de Maurice.</p>
+
+<h3 id="pc-8">8. Mineurs, modifications et contact</h3>
+<p><strong>Mineurs.</strong> Maillage est réservé aux personnes majeures et ne collecte pas sciemment de données de mineurs.</p>
+<p><strong>Modifications.</strong> Toute modification importante de cette politique est annoncée dans l’application au moins 30 jours avant son entrée en vigueur.</p>
+<p><strong>Contact.</strong> [Nom de l’éditeur], [adresse postale], [adresse e-mail dédiée].</p>
+</section>
+
+</div></main>
+<footer><div class="wrap">Maillage — outil de coordination familiale. En cas d’urgence, appelez le 15 ou le 112.</div></footer>
+
+<script>
+{
+  // Surligne les champs encore à compléter, entre crochets, tant qu'ils ne sont pas remplis
+  const walker = document.createTreeWalker(document.querySelector('main'), NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) if (/\[[^\]]+\]/.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+  for (const n of nodes) {
+    const frag = document.createDocumentFragment();
+    n.nodeValue.split(/(\[[^\]]+\])/).forEach((part) => {
+      if (/^\[[^\]]+\]$/.test(part)) { const m = document.createElement('mark'); m.className = 'todo'; m.textContent = part; frag.appendChild(m); }
+      else if (part) frag.appendChild(document.createTextNode(part));
+    });
+    n.parentNode.replaceChild(frag, n);
+  }
+}
+</script>
+</body>
+</html>
